@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: #333;
+}
+
+/* Header Title */
+.header-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Container Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Form Container */
+.number-container {
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #ff8c00;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Styling */
+.link {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #ff5722;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ff8c00;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

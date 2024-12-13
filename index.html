@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niegas_Website</title>
+    <link rel="stylesheet" href="css.2/design.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            
+        }
+
+        .intro {
+            height: 100%;
+            text-align: match-parent;
+            padding: 90px;
+            background: linear-gradient(135deg, #ffde59, #ff914d);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: transform 1s ease; /* Add transition for sliding down */
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: none;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.8s ease;
+            height: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide:nth-child(1) {
+            background-color: #ffffff;
+        }
+        .slide:nth-child(2) {
+            background-image: url(https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/462638055_594176032970284_1264226607047660777_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGfRTW2tpl2x0FfXvjmzLtjoVBweft4F3ChUHB5-3gXcONiL_B2hHVMqk1y9sEaYjglVCSBvyx7gxyJIH2qhJ6x&_nc_ohc=ixIQro8JkbAQ7kNvgGf-nTt&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&oh=03_Q7cD1QGMoS_S_wOnud8QQxy-E1FH7u0fBqZeceIAA-JDW-N57w&oe=678319E3);
+        }
+        .slide:nth-child(3) {
+            background-image: url(https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/462560525_3949239435312054_5552213972420314061_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHBAmwQLk1roXfb2XYF9fK90iHP9T9OcRnSIc_1P05xGXFzQXK3mskKM4c1su2feY_1UY-CZeTcWIwujcWWx2jg&_nc_ohc=yAehLVOQhAoQ7kNvgFhlAxz&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&oh=03_Q7cD1QHtjIbzeSap4OQcVXXaDcWWqfLbJY0qzJv2CU3oUVI_1Q&oe=678311AF);
+        }
+        .slide:nth-child(4) {
+            background-image: url(https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/470057128_1301881144166895_4306087125183001857_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFN26PKA2j6sq7rzw3duCjhpOjcp1tU6COk6NynW1ToI1N2X_3ixba6ZJyCLXIZh7ESIcGTlFry25R8rk0ZW14J&_nc_ohc=s-z-JC6yqJwQ7kNvgFV7imE&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&oh=03_Q7cD1QF4zrlnD0t7UW3lJLXGEbKSYLt-t8PFqkgeePQOlVkh3Q&oe=67831286);
+        }
+        .slide:nth-child(5) {
+            background: linear-gradient(135deg, #ffde59, #ff914d);
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .button {
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        .button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intro Section -->
+    <section class="intro" id="introSection">
+        <h1>Welcome to my Website</h1>
+        <p>Click below to get started.</p>
+        <button id="getStartedBtn">Lets Start</button>
+    </section>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container" id="slideshowContainer">
+        <div class="slides" id="slides">
+            <link rel="stylesheet" href="css.2/main_styles.css" />
+            <div class="slide">
+                <p class="description1">General Conversion Tool</p>
+                <a href="pages/conversion.html" class="link">Convert</a>
+            </div>
+            <div class="slide">
+                <p class="description2">Income Tax Calculator</p>
+                <a href="pages/tax.html" class="link">Calculate Income Tax</a>
+            </div>
+            <div class="slide">
+                <p class="description3">Factorials</p>
+                <a href="pages/loops.html" class="link">Calculate</a>
+            </div>
+            <div class="slide">
+                <p class="description3">Simple Payroll</p>
+                <a href="pages/payroll.html" class="link">Calculate</a>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="button" id="prev">&#10094;</button>
+            <button class="button" id="next">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="slide/script.js"></script>
+</body>
+</html>

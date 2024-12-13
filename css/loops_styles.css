@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #222;
+    padding: 1rem;
+    overflow-x: hidden;
+}
+
+
+.header-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #060606;
+    margin: 1.5rem 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Main Container Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Form Container */
+.number-container {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+}
+
+select {
+    background: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2212%22 height%3D%2212%22 viewBox%3D%220 0 24 24%22 fill%3D%22none%22 stroke%3D%22%23000%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22 class%3D%22feather feather-chevron-down%22%3E%3Cpolyline points%3D%226 9 12 15 18 9%22%3E%3C/polyline%3E%3C/svg%3E') no-repeat right 10px center;
+    appearance: none;
+    background-size: 1em;
+    background-color: #fff;
+    padding-right: 2.5rem;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #0077b6, #023e8a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* Link Styling */
+.link {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #023e8a;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 2rem;
+    background: #0077b6;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    animation: fadeIn 2s ease;
+}

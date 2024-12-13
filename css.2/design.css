@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffde59, #ff914d);
+}
+/* Style for the intro section */
+.intro {
+    height: 100vh; /* Full viewport height */
+    background-color: #003cff;
+    color: rgb(206, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 160px;
+}
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+.intro button {
+    padding: 10px 20px;
+    background-color: #ff914d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.intro button:hover {
+    background-color: #ff0000;
+}
+
+/* Style for the content section */
+.content {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffde59, #ff914d);
+    padding: 50px;
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* For smooth scroll */
+html {
+    scroll-behavior: smooth;
+    background-color:#f2a371;
+}
